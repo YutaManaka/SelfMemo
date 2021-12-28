@@ -7,7 +7,7 @@ Swift5.5.1
 Xcode13.1   
 [App Icon Generator](https://appicon.co/)   
 ## 参考資料
-[Xcodeでプロジェクトを作成してGithubにプッシュする](https://swiswiswift.com/2020-12-03/)
+[Xcodeでプロジェクトを作成してGithubにプッシュする](https://swiswiswift.com/2020-12-03/)   
 [【2020年度版】iOSアプリをAppStoreに公開する手順を簡潔に解説](https://qiita.com/Labi/items/3b71b8f5ef065904c1de)   
 [（2021年版）iOSアプリをAppStoreで公開する手順まとめ](https://zenn.dev/moutend/articles/feebf0120dce6e6426fa)   
 
