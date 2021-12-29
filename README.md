@@ -3,8 +3,9 @@
 ## 使い方
 
 ## 使用言語・ツール
-Swift5.5.1 
-Xcode13.1   
+Swift 5.5.1  
+Realm 10.20.1   
+Xcode 13.1   
 [App Icon Generator](https://appicon.co/)   
 ## 参考資料
 [Xcodeでプロジェクトを作成してGithubにプッシュする](https://swiswiswift.com/2020-12-03/)   
