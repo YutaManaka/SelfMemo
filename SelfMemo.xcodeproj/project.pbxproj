@@ -17,6 +17,9 @@
 		F5A65987277B424600BAFA3C /* SelfMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A65986277B424600BAFA3C /* SelfMemoTests.swift */; };
 		F5A65991277B424600BAFA3C /* SelfMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A65990277B424600BAFA3C /* SelfMemoUITests.swift */; };
 		F5A65993277B424600BAFA3C /* SelfMemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A65992277B424600BAFA3C /* SelfMemoUITestsLaunchTests.swift */; };
+		F5A659AA277C501900BAFA3C /* SelfMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A659A9277C501900BAFA3C /* SelfMemo.swift */; };
+		F5A659AC277C502500BAFA3C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A659AB277C502500BAFA3C /* ListView.swift */; };
+		F5A659AE277C505800BAFA3C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A659AD277C505800BAFA3C /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		F5A6598C277B424600BAFA3C /* SelfMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A65990277B424600BAFA3C /* SelfMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMemoUITests.swift; sourceTree = "<group>"; };
 		F5A65992277B424600BAFA3C /* SelfMemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5A659A9277C501900BAFA3C /* SelfMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMemo.swift; sourceTree = "<group>"; };
+		F5A659AB277C502500BAFA3C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F5A659AD277C505800BAFA3C /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		FF492FDA09F4854AC1FAA5F4 /* Pods-SelfMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfMemo.debug.xcconfig"; path = "Target Support Files/Pods-SelfMemo/Pods-SelfMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +102,6 @@
 				5A36D435CA701CC31F35BBD4 /* Pods-SelfMemoTests.debug.xcconfig */,
 				53E569A63611087809C54466 /* Pods-SelfMemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,6 +140,9 @@
 		F5A65974277B424400BAFA3C /* SelfMemo */ = {
 			isa = PBXGroup;
 			children = (
+				F5A659A8277C500200BAFA3C /* ViewModel */,
+				F5A659A7277C4FF500BAFA3C /* View */,
+				F5A659A6277C4FEE00BAFA3C /* Model */,
 				F5A65975277B424400BAFA3C /* SelfMemoApp.swift */,
 				F5A65977277B424400BAFA3C /* ContentView.swift */,
 				F5A65979277B424600BAFA3C /* Assets.xcassets */,
@@ -166,6 +174,30 @@
 				F5A65992277B424600BAFA3C /* SelfMemoUITestsLaunchTests.swift */,
 			);
 			path = SelfMemoUITests;
+			sourceTree = "<group>";
+		};
+		F5A659A6277C4FEE00BAFA3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5A659A9277C501900BAFA3C /* SelfMemo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5A659A7277C4FF500BAFA3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5A659AB277C502500BAFA3C /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5A659A8277C500200BAFA3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5A659AD277C505800BAFA3C /* ListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,7 +438,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A659AE277C505800BAFA3C /* ListViewModel.swift in Sources */,
+				F5A659AC277C502500BAFA3C /* ListView.swift in Sources */,
 				F5A65978277B424400BAFA3C /* ContentView.swift in Sources */,
+				F5A659AA277C501900BAFA3C /* SelfMemo.swift in Sources */,
 				F5A65976277B424400BAFA3C /* SelfMemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
