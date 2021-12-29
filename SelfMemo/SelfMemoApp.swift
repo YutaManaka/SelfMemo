@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct SelfMemoApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+    // インスタンス化された AppModel のライフサイクルをアプリと同じにする
+    @StateObject var appModel: AppModel = AppModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // 作成された AppModel の インスタンスと インスタンスプロパティ textLines を以降の UI (ContentView) に渡す
+            ContentView(appModel: appModel, textLines: appModel.textLineList)
         }
     }
 }
