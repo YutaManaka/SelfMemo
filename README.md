@@ -14,7 +14,8 @@ Xcode 13.1
 [【swift】外部ライブラリ管理 – CocoaPods](https://pomarano.site/ios/119/)    
 [Building Ruby 3 on Mac M1 ARM](https://brandur.org/fragments/ruby-3-on-m1)   
 [macOS で rbenv で Ruby 3.1.0 を入れる](https://nomad.office-aship.info/macos-rbenv/)   
-[CocoaPodsを使ったRealmのインストール手順](https://naoya-ono.com/swift/realm-install/)   
+[CocoaPodsを使ったRealmのインストール手順](https://naoya-ono.com/swift/realm-install/)  
+[Realm を使ったアプリの開発方法](https://software.small-desk.com/development/2020/09/05/realmxcode12-realm-step1/)     
 ## 利用者情報の取得・利用・第三者提供
 このアプリは利用者の個人情報を取得・利用・第三者提供をしません。
 

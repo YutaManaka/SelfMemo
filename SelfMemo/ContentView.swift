@@ -8,28 +8,16 @@
 import SwiftUI
 import RealmSwift
 
-//struct ContentView: View {
-//    var body: some View {
-//        Text("Hello, world!")
-//            .padding()
-//    }
-//}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
-
 struct ContentView: View {
     var appModel: AppModel // AppModel を外部から受け取る
     @ObservedObject var textLines: RealmSwift.List<TextLine> // textLines を外部から受け取る
+    
     var body: some View {
         VStack {
             NavigationView {
                 List {
                     ForEach( textLines.freeze() ) { textLine in // appModel 内部で保持されている TextLine の全てを List の対象とする
-                        Text("\(textLine.text)") // TextLineで保持しているtextを表示
+                        NavigationLink(textLine.text, destination: TextDetailView(textLine: self.textLineFromID(id: textLine.id))) // TextLineで保持しているtextを表示
                     }
                     .onDelete(perform: delete)
                     .onMove(perform: move)
@@ -38,6 +26,8 @@ struct ContentView: View {
                     leading: EditButton(),
                     trailing: Button("Add", action: {
                         let newName = "name" + String(Int.random(in: 0...2000))
+//                        let createCommand = CreateTextLineCommand(appModel: self.appModel, newTextLineText: newName)
+//                        self.appModel.executeCommand(createCommand)
                         self.appModel.addTextLine(newName)
                     })
                 )
@@ -61,6 +51,25 @@ struct ContentView: View {
         textLines.move(fromOffsets: offsets, toOffset: to)
         try! textLines.realm?.commitWrite()
     }
+    // idからデータを探す
+    func textLineFromID(id: String) -> TextLine {
+        let realm = try! Realm()
+        return realm.object(ofType: TextLine.self, forPrimaryKey: id)!
+      }
+}
+
+// 編集画面
+struct TextDetailView: View {
+  @ObservedObject var textLine: TextLine
+  @State private var tmpText = ""
+  var body: some View {
+    TextField(textLine.text, text: $tmpText, onCommit: {
+      let realm = try! Realm()
+      try! realm.write {
+        textLine.text = tmpText
+      }
+    })
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
