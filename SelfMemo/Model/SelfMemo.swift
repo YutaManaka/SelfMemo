@@ -67,6 +67,16 @@ class AppModel: NSObject, ObservableObject {
         }
     }
     // デバッグ用終わり
+    
+    // 削除
+    func removeTextLine(_ textLine: TextLine) {
+        guard let index = textLineList.index(of: textLine) else { return }
+        let realm = try! Realm()
+        try! realm.write {
+            realm.delete(textLine)
+            textLineList.remove(at: index)
+        }
+    }
 }
 
 
