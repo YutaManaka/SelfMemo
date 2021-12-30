@@ -10,6 +10,7 @@
 		2109CD1A6BD4AAB495709AC1 /* Pods_SelfMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E85DF42707FFC60A005BFD /* Pods_SelfMemoTests.framework */; };
 		5BE7E1452A1FD475D08CCB76 /* Pods_SelfMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF8CAFB635F0892C8739AE8 /* Pods_SelfMemo.framework */; };
 		9A2EDB5067D22C6715627706 /* Pods_SelfMemo_SelfMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9649A3B07AD6A21B4B901801 /* Pods_SelfMemo_SelfMemoUITests.framework */; };
+		F52B10FC277D999D000099B8 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B10FB277D999D000099B8 /* AddView.swift */; };
 		F5A65976277B424400BAFA3C /* SelfMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A65975277B424400BAFA3C /* SelfMemoApp.swift */; };
 		F5A65978277B424400BAFA3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A65977277B424400BAFA3C /* ContentView.swift */; };
 		F5A6597A277B424600BAFA3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A65979277B424600BAFA3C /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		9649A3B07AD6A21B4B901801 /* Pods_SelfMemo_SelfMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfMemo_SelfMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF8CAFB635F0892C8739AE8 /* Pods_SelfMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E85DF42707FFC60A005BFD /* Pods_SelfMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52B10FB277D999D000099B8 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		F5A65972277B424400BAFA3C /* SelfMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A65975277B424400BAFA3C /* SelfMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMemoApp.swift; sourceTree = "<group>"; };
 		F5A65977277B424400BAFA3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				F5A659AB277C502500BAFA3C /* ListView.swift */,
+				F52B10FB277D999D000099B8 /* AddView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			files = (
 				F5A659AE277C505800BAFA3C /* ListViewModel.swift in Sources */,
 				F5A659AC277C502500BAFA3C /* ListView.swift in Sources */,
+				F52B10FC277D999D000099B8 /* AddView.swift in Sources */,
 				F5A65978277B424400BAFA3C /* ContentView.swift in Sources */,
 				F5A659AA277C501900BAFA3C /* SelfMemo.swift in Sources */,
 				F5A65976277B424400BAFA3C /* SelfMemoApp.swift in Sources */,
