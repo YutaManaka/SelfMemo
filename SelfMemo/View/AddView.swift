@@ -9,6 +9,10 @@ import SwiftUI
 import Foundation
 
 struct AddView: View {
+//    init() {
+//        // TextEditorの背景色を設定するため
+//        UITextView.appearance().backgroundColor = .clear
+//    }
     @Environment(\.presentationMode) var presentation
     @ObservedObject var viewModel = ListViewModel.shared
     
@@ -17,12 +21,18 @@ struct AddView: View {
             List {
                 Section(header: Text("ToDo")) {
                     TextField("", text: $viewModel.text)
+                        .overlay(
+                            RoundedRectangle(cornerSize: CGSize(width: 8.0, height: 8.0))
+                            .stroke(Color.gray, lineWidth: 2.0)
+                            .padding(-8.0)
+                        )
                 }
+                .background(Color.white)
             }
             .navigationTitle(viewModel.updatingTodo == nil ? "ToDoを追加" : "ToDoを更新")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         // 追加
                         if (viewModel.updatingTodo == nil) {
@@ -37,7 +47,7 @@ struct AddView: View {
                         Text("完了")
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
                         presentation.wrappedValue.dismiss()
                         viewModel.cancel()
@@ -47,6 +57,15 @@ struct AddView: View {
                 }
             }
         }
+    }
+}
+
+private struct CustomStyle: ViewModifier {
+    public func body(content: Content) -> some View {
+        return content
+            .padding()
+            .foregroundColor(.green)
+            .background(Color.yellow)
     }
 }
 

@@ -9,6 +9,7 @@ import Foundation
 
 class ListViewModel: ObservableObject {
     @Published var displayAddView = false
+    @Published var displaySettingView = false
     @Published var updatingTodo:Todo? = nil
     @Published var todos: [Todo] = []
     @Published var text = ""

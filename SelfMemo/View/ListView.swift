@@ -13,7 +13,6 @@ struct ListView: View {
         UIToolbar.appearance().barTintColor = UIColor(red:128/256, green:216/256, blue:208/256, alpha: 1)
     }
     @ObservedObject var viewModel = ListViewModel.shared
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -83,33 +82,29 @@ struct ListView: View {
                     }
                     // ボトムバー
                     ToolbarItemGroup(placement: .bottomBar) {
-                        NavigationLink(destination: ListView()) {
-                            Image("home")
-                                .renderingMode(.original)
-                                .resizable()
-                                .padding(40)
-                                .frame(width: 120, height: 120)
-                        }
-                        Spacer()
                         Button(action: {
-                            viewModel.displayAddView.toggle()
+                            viewModel.displaySettingView.toggle()
                         }) {
                             Image("setting")
                                 .renderingMode(.original)
                                 .resizable()
-                                .padding(40)
+                                .padding(45)
                                 .frame(width: 120, height: 120)
                         }
                     }
                     
                 }
+                .navigationViewStyle(StackNavigationViewStyle()) 
                 // 追加画面
                 .sheet(isPresented: $viewModel.displayAddView) {
                     AddView()
                 }
+                // 設定画面
+                .sheet(isPresented: $viewModel.displaySettingView) {
+                    SettingView()
+                }
             }
             .navigationBarTitle("", displayMode: .inline)
-            .navigationBarBackButtonHidden(true)
         }
     }
 }
