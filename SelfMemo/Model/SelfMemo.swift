@@ -46,7 +46,8 @@ extension Todo {
     // 全件取得
     static func fetchAllTodo() -> [Todo]? {
         guard let localRealm = try? Realm() else { return nil }
-        let todos = localRealm.objects(Todo.self).filter("completed = false")
+        let todos = localRealm.objects(Todo.self)
+            .filter("completed = false")
         return Array(todos)
     }
         

@@ -21,6 +21,7 @@
 		F5A659AA277C501900BAFA3C /* SelfMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A659A9277C501900BAFA3C /* SelfMemo.swift */; };
 		F5A659AC277C502500BAFA3C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A659AB277C502500BAFA3C /* ListView.swift */; };
 		F5A659AE277C505800BAFA3C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A659AD277C505800BAFA3C /* ListViewModel.swift */; };
+		F5AB6912277EB00B00C96F59 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F5AB6911277EB00B00C96F59 /* plus.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F5A659A9277C501900BAFA3C /* SelfMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfMemo.swift; sourceTree = "<group>"; };
 		F5A659AB277C502500BAFA3C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		F5A659AD277C505800BAFA3C /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F5AB6911277EB00B00C96F59 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		FF492FDA09F4854AC1FAA5F4 /* Pods-SelfMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfMemo.debug.xcconfig"; path = "Target Support Files/Pods-SelfMemo/Pods-SelfMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 		F5A65974277B424400BAFA3C /* SelfMemo */ = {
 			isa = PBXGroup;
 			children = (
+				F5AB6910277EAF8500C96F59 /* Image */,
 				F5A659A8277C500200BAFA3C /* ViewModel */,
 				F5A659A7277C4FF500BAFA3C /* View */,
 				F5A659A6277C4FEE00BAFA3C /* Model */,
@@ -201,6 +204,14 @@
 				F5A659AD277C505800BAFA3C /* ListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5AB6910277EAF8500C96F59 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F5AB6911277EB00B00C96F59 /* plus.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +325,7 @@
 			files = (
 				F5A6597D277B424600BAFA3C /* Preview Assets.xcassets in Resources */,
 				F5A6597A277B424600BAFA3C /* Assets.xcassets in Resources */,
+				F5AB6912277EB00B00C96F59 /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
