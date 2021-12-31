@@ -15,11 +15,17 @@ struct ListView: View {
             List {
                 ForEach(viewModel.todos) { todo in
                     HStack {
-//                        Image(systemName: "circlebadge.fill")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 15, height: 15)
-//                            .foregroundColor(.blue)
+                        Button {
+                            viewModel.completeTodo(todo: todo)
+                        } label: {
+                            if(todo.completed) {
+                                Image(systemName: "checkmark.square.fill")
+                            .foregroundColor(.green)
+                            } else {
+                                Image(systemName: "square")
+                            }
+                        }
+                        .buttonStyle(PlainButtonStyle())
                         VStack {
                             Text(todo.text)
                             .font(.title3)
@@ -34,16 +40,6 @@ struct ListView: View {
                             Image(systemName: "trash")
                         }
                         .tint(.red)
-                    }
-                    .swipeActions(edge: .leading) {
-                            Button {
-                                viewModel.updatingTodo = todo
-                                viewModel.text = todo.text
-                                viewModel.displayAddView.toggle()
-                            } label: {
-                                Image(systemName: "pencil.circle")
-                            }
-                            .tint(.green)
                     }
                     .onTapGesture {
                         viewModel.updatingTodo = todo
@@ -82,3 +78,10 @@ struct ListView_Previews: PreviewProvider {
         ListView()
     }
 }
+
+//func toggle() -> Void {
+//    todo.completed = false
+////        isChecked = !isChecked
+//        UIImpactFeedbackGenerator(style: .medium)
+//        .impactOccurred()
+//    }
