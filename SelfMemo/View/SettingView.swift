@@ -26,6 +26,7 @@ struct SettingView: View {
             }
             // ツールバー
             .toolbar {
+                // ナビゲーションバー左
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
                         viewModel.displaySettingView.toggle()
@@ -35,6 +36,11 @@ struct SettingView: View {
                     }
                 }
             }
+            // ナビゲーションバータイトル
+            .navigationBarTitle(
+                "設定",
+                displayMode: .inline
+            )
         }
     }
 }

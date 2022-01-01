@@ -18,20 +18,35 @@ struct AddView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                Section(header: Text("ToDo")) {
-                    TextField("", text: $viewModel.text)
-                        .overlay(
-                            RoundedRectangle(cornerSize: CGSize(width: 8.0, height: 8.0))
-                            .stroke(Color.gray, lineWidth: 2.0)
-                            .padding(-8.0)
-                        )
+            VStack {
+                Spacer()
+                Rectangle()
+                    .fill(Color(red:128/256, green:216/256, blue:208/256))
+                        .frame(maxWidth: .infinity, maxHeight: 8)
+                List {
+                    Section(header: Text("タスク名")) {
+                        TextField("タスク名を記入してください", text: $viewModel.text)
+                            .overlay(
+                                RoundedRectangle(cornerSize: CGSize(width: 8.0, height: 8.0))
+                                .stroke(Color.gray, lineWidth: 1.0)
+                                .padding(-8.0)
+                            )
+                    }
+                    .background(Color.white)
                 }
-                .background(Color.white)
             }
-            .navigationTitle(viewModel.updatingTodo == nil ? "ToDoを追加" : "ToDoを更新")
-            .navigationBarTitleDisplayMode(.inline)
+            //ツールバー
             .toolbar {
+                // ナビゲーションバー左
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        presentation.wrappedValue.dismiss()
+                        viewModel.cancel()
+                    }) {
+                        Text("キャンセル")
+                    }
+                }
+                // ナビゲーションバー右
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         // 追加
@@ -47,15 +62,12 @@ struct AddView: View {
                         Text("完了")
                     }
                 }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        presentation.wrappedValue.dismiss()
-                        viewModel.cancel()
-                    }) {
-                        Text("キャンセル")
-                    }
-                }
             }
+            // ナビゲーションバータイトル
+            .navigationBarTitle(
+                viewModel.updatingTodo == nil ? "タスクを追加" : "タスクを更新",
+                displayMode: .inline
+            )
         }
     }
 }
