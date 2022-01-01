@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MessageUI
 
 struct SettingView: View {
     @ObservedObject var viewModel = ListViewModel.shared
@@ -19,8 +20,15 @@ struct SettingView: View {
                 // リスト
                 List {
                     Text("アプリをレビューする")
-                    Text("プライバシーポリシー")
-                    Text("お問合せ")
+                    Link("プライバシーポリシー",
+                         destination: URL(string: "https://github.com/YutaManaka/SelfMemo")!
+                    )
+                    Button(action: {
+                        viewModel.displayMailView.toggle()
+                    }) {
+                        Text("お問合せ")
+                    }
+                    .disabled(!MFMailComposeViewController.canSendMail())
                         .listRowSeparatorTint(.black)
                 }
             }
@@ -41,6 +49,10 @@ struct SettingView: View {
                 "設定",
                 displayMode: .inline
             )
+            // メール画面
+            .sheet(isPresented: $viewModel.displayMailView) {
+                MailView(displayed: $viewModel.displayMailView)
+            }
         }
     }
 }

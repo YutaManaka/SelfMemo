@@ -23,6 +23,7 @@
 		F5A659AE277C505800BAFA3C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A659AD277C505800BAFA3C /* ListViewModel.swift */; };
 		F5AB6912277EB00B00C96F59 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F5AB6911277EB00B00C96F59 /* plus.png */; };
 		F5AB6914277EFFBB00C96F59 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AB6913277EFFBB00C96F59 /* SettingView.swift */; };
+		F5ABDB1E278024D900AD9E2A /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ABDB1D278024D900AD9E2A /* MailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		F5AB6911277EB00B00C96F59 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		F5AB6913277EFFBB00C96F59 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F5ABDB1C2780153E00AD9E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F5ABDB1D278024D900AD9E2A /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		FF492FDA09F4854AC1FAA5F4 /* Pods-SelfMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfMemo.debug.xcconfig"; path = "Target Support Files/Pods-SelfMemo/Pods-SelfMemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +201,7 @@
 				F5A659AB277C502500BAFA3C /* ListView.swift */,
 				F52B10FB277D999D000099B8 /* AddView.swift */,
 				F5AB6913277EFFBB00C96F59 /* SettingView.swift */,
+				F5ABDB1D278024D900AD9E2A /* MailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				F5A65978277B424400BAFA3C /* ContentView.swift in Sources */,
 				F5A659AA277C501900BAFA3C /* SelfMemo.swift in Sources */,
 				F5A65976277B424400BAFA3C /* SelfMemoApp.swift in Sources */,
+				F5ABDB1E278024D900AD9E2A /* MailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
