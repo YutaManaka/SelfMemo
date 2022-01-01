@@ -20,8 +20,10 @@ Xcode 13.1
 [Formで複数のButtonが機能しない原因と解決法](https://www.choge-blog.com/programming/swiftuiform%E3%81%A7%E8%A4%87%E6%95%B0%E3%81%AEbutton%E3%81%8C%E6%A9%9F%E8%83%BD%E3%81%97%E3%81%AA%E3%81%84%E5%8E%9F%E5%9B%A0%E3%81%A8%E8%A7%A3%E6%B1%BA%E6%B3%95/)   
 [NavigationViewでのボタン配置（toolbar）](https://capibara1969.com/3045/)   
 [info.plistでダークモードを無効にしてもダークモードになってしまう問題を解決する](https://qiita.com/antk/items/b9f95a5cdfc32341b2a5)   
-[Xcode13でinfo.plistが見つからない](https://zenn.dev/yuma1217/articles/cd4c79b39266e4)   
-
+[Xcode13でinfo.plistが見つからない](https://zenn.dev/yuma1217/articles/cd4c79b39266e4)  
+[外部ブラウザでURLを開きたいときはLinkが使える](https://weblion303.net/2386)   
+[個人開発アプリのプライバシーポリシーを参考にしてみる](https://buchio.ever.jp/how-privacy-policy/)  
+[MessageUIを用いたメール機能（お問い合わせ機能）の実装方法](https://qiita.com/nkekisasa222/items/4e110b4d43016ea8846a)  
 ## プライバシーポリシー
 第三者に個人を特定できる情報を提供することはありません。  
 個人情報の管理には最新の注意を払い、以下に掲げた通りに扱います。  

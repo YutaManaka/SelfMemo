@@ -9,10 +9,6 @@ import SwiftUI
 import Foundation
 
 struct AddView: View {
-//    init() {
-//        // TextEditorの背景色を設定するため
-//        UITextView.appearance().backgroundColor = .clear
-//    }
     @Environment(\.presentationMode) var presentation
     @ObservedObject var viewModel = ListViewModel.shared
     
