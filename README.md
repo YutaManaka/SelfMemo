@@ -19,6 +19,9 @@ Xcode 13.1
 [SwiftUIでチェックボックス](https://zenn.dev/kazuchanfl/articles/f9b364c63ad3a7)   
 [Formで複数のButtonが機能しない原因と解決法](https://www.choge-blog.com/programming/swiftuiform%E3%81%A7%E8%A4%87%E6%95%B0%E3%81%AEbutton%E3%81%8C%E6%A9%9F%E8%83%BD%E3%81%97%E3%81%AA%E3%81%84%E5%8E%9F%E5%9B%A0%E3%81%A8%E8%A7%A3%E6%B1%BA%E6%B3%95/)   
 [NavigationViewでのボタン配置（toolbar）](https://capibara1969.com/3045/)   
+[info.plistでダークモードを無効にしてもダークモードになってしまう問題を解決する](https://qiita.com/antk/items/b9f95a5cdfc32341b2a5)   
+[Xcode13でinfo.plistが見つからない](https://zenn.dev/yuma1217/articles/cd4c79b39266e4)   
+
 ## 利用者情報の取得・利用・第三者提供
 このアプリは利用者の個人情報を取得・利用・第三者提供をしません。
 
