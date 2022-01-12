@@ -17,19 +17,10 @@ class ListViewModel: ObservableObject {
     
     init () {
         fetchTodos()
-        // デバッグ用
-        if self.text.count < 4 {
-            self.createTestData()
-        }
     }
     
     func fetchTodos() {
         self.todos = Todo.fetchAllTodo()!
-    }
-    
-    func createTestData() {
-        Todo.createTestData(i:10)
-        fetchTodos()
     }
     
     func addTodo() {
