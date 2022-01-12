@@ -26,15 +26,6 @@ extension Todo {
         }
     }
     
-    // サンプルデータ作成(デバッグ用)
-    static func createTestData(i num: Int) {
-        for i in 0 ..< num {
-            let newText = Todo()
-            newText.text = "テスト\(i + 1)"
-            self.addTodo(text: newText.text)
-        }
-    }
-    
     // 更新
     static func updateTodo(todo: Todo, newText: String) {
         guard let localRealm = try? Realm() else { return }
