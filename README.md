@@ -24,6 +24,7 @@ Xcode 13.1
 [外部ブラウザでURLを開きたいときはLinkが使える](https://weblion303.net/2386)   
 [個人開発アプリのプライバシーポリシーを参考にしてみる](https://buchio.ever.jp/how-privacy-policy/)  
 [MessageUIを用いたメール機能（お問い合わせ機能）の実装方法](https://qiita.com/nkekisasa222/items/4e110b4d43016ea8846a)  
+[Adding Shortcuts To An App](https://toolboxpro.app/blog/adding-shortcuts-to-an-app-1)  
 ## プライバシーポリシー
 第三者に個人を特定できる情報を提供することはありません。  
 個人情報の管理には最新の注意を払い、以下に掲げた通りに扱います。  
