@@ -24,7 +24,7 @@ class ListViewModel: ObservableObject {
     }
     
     func addTodo() {
-        Todo.addTodo(text: text)
+        Todo.addTodo(text: self.text)
         self.text = ""
         fetchTodos()
     }

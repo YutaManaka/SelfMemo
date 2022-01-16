@@ -6,12 +6,25 @@
 //
 
 import SwiftUI
+import Intents
 
 @main
 struct RealmTodoApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
             ContentView()
+        }
+    }
+    class AppDelegate: UIResponder, UIApplicationDelegate {
+        func application(_ application: UIApplication, handlerFor intent: INIntent) -> Any? {
+
+            switch intent {
+                case is AddTodoFromVoiceIntent:
+                    return AddTodoFromVoiceIntentHandler()
+                default:
+                    return nil
+            }
         }
     }
 }
