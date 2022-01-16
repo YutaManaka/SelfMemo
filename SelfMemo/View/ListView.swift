@@ -10,7 +10,6 @@ import SwiftUI
 struct ListView: View {
     init() {
         UITableView.appearance().backgroundColor = .white // Uses UIColor
-        UIToolbar.appearance().barTintColor = UIColor(red:128/256, green:216/256, blue:208/256, alpha: 1)
     }
     @ObservedObject var viewModel = ListViewModel.shared
     var body: some View {
@@ -18,7 +17,7 @@ struct ListView: View {
             VStack {
                 Spacer()
                 Rectangle()
-                    .fill(Color(red:128/256, green:216/256, blue:208/256))
+                    .fill(Color(red:128/256, green:216/256, blue:209/256))
                         .frame(maxWidth: .infinity, maxHeight: 8)
                 // リスト
                 List {
