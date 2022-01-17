@@ -105,6 +105,7 @@ struct ListView: View {
             }
             .navigationBarTitle("", displayMode: .inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
