@@ -64,7 +64,7 @@ struct ListView: View {
                 .toolbar {
                     // ナビゲーションバー左
                     ToolbarItem(placement: .navigationBarLeading){
-                        EditButton()
+                        MyEditButton()
                     }
                     // ナビゲーションバー右
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -106,6 +106,29 @@ struct ListView: View {
             .navigationBarTitle("", displayMode: .inline)
         }
         .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+/// オリジナルEditButton
+struct MyEditButton: View {
+    @Environment(\.editMode) var editMode
+    
+    var body: some View {
+        Button(action: {
+            withAnimation() {
+                if editMode?.wrappedValue.isEditing == true {
+                    editMode?.wrappedValue = .inactive
+                } else {
+                    editMode?.wrappedValue = .active
+                }
+            }
+        }) {
+            if editMode?.wrappedValue.isEditing == true {
+                Text("終了")
+            } else {
+                Text("並べ替え")
+            }
+        }
     }
 }
 
