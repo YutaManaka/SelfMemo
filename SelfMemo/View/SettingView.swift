@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MessageUI
+import StoreKit
 
 struct SettingView: View {
     @ObservedObject var viewModel = ListViewModel.shared
@@ -19,7 +20,13 @@ struct SettingView: View {
                         .frame(maxWidth: .infinity, maxHeight: 8)
                 // リスト
                 List {
-                    Text("アプリをレビューする")
+                    Button(action: {
+                        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                            SKStoreReviewController.requestReview(in: scene)
+                        }
+                    }) {
+                        Text("アプリをレビューする")
+                    }
                     Link("プライバシーポリシー",
                          destination: URL(string: "https://github.com/YutaManaka/SelfMemo")!
                     )
