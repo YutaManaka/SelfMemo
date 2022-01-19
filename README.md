@@ -8,12 +8,24 @@
 
 <img src="https://user-images.githubusercontent.com/54618797/149664825-7e0af38b-7228-49cb-8469-3c714d28e324.png" width="120"> <img src="https://user-images.githubusercontent.com/54618797/149664957-cb4676b2-fb71-488d-92b5-a7d4d2ff7803.png" width="120"> <img src="https://user-images.githubusercontent.com/54618797/149665784-a4e1cec4-a3e3-47a9-92ba-b0ba1c11cc58.jpeg" width="120"> <img src="https://user-images.githubusercontent.com/54618797/149664881-4e1faada-872e-4d02-a19f-0ddae02f3d4f.png" width="120">
 
+
+https://user-images.githubusercontent.com/54618797/150151179-d5b780aa-8f8b-407f-b8fd-13a2f834380c.mp4
+
+
 - 右上の[+]ボタンでメモを追加できます。
 - 左上の[Edit]ボタンでメモの並べ替えができます。
   
 ### ショートカットを利用して音声入力する
 
 <img src="https://user-images.githubusercontent.com/54618797/149665583-3d76a959-e223-4e32-83b1-5397ac22bb59.png" width="100"> <img src="https://user-images.githubusercontent.com/54618797/149665420-bffa9a94-c265-4ee6-a3c7-2eebffdca5b1.png" width="100"> <img src="https://user-images.githubusercontent.com/54618797/149665463-a12d4668-fa29-4a5f-8a24-c582e8f21cd3.png" width="100"> <img src="https://user-images.githubusercontent.com/54618797/149665465-f0a7ff16-5139-47e4-b17f-332d5633cff4.png" width="100"> <img src="https://user-images.githubusercontent.com/54618797/149665472-4fbc55a7-e30b-4602-a48f-095982f1ed40.png" width="100"> <img src="https://user-images.githubusercontent.com/54618797/149665475-fb77fd6b-fc53-473c-a508-37988bdda25a.png" width="100"> <img src="https://user-images.githubusercontent.com/54618797/149665483-62ec30cd-7abd-4841-95e0-8649144a2ef6.png" width="100"> 
+
+
+https://user-images.githubusercontent.com/54618797/150151129-c1b4ed62-0d7b-4b71-ac1b-1cfecfdf42e9.mp4
+
+
+
+https://user-images.githubusercontent.com/54618797/150150537-0a6b7d83-44e6-472f-9827-ae861adeb986.mov
+
 
 - ショートカットを活用して、siriから音声のみでメモを登録できます。
 - 初回のみ、下記の手順でショートカットの登録が必要です。
