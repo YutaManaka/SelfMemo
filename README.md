@@ -1,4 +1,4 @@
-# セルフメモ
+# メモって！
 
 <img src="https://user-images.githubusercontent.com/54618797/149664790-aee50ec7-b42f-4a4f-a5b4-b54d63321746.png" width="200">
 
